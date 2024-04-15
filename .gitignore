@@ -4,3 +4,4 @@
 *.xml
 *.out
 .cuda-env/*
+.*
