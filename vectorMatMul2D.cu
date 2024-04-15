@@ -10,12 +10,12 @@
 #define BLOCK_SIZE 16
 #define ELEMENTS 4096
 
-typedef struct{
+typedef struct {
     int width;
     int height;
     int stride;
     float* elements;
-}Matrix;
+} Matrix;
 
 __device__ float GetElement(const Matrix A, int row, int col)
 {

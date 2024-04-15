@@ -1,5 +1,6 @@
-.vscode
+.vscode/*
 *.log
 *.apk
 *.xml
 *.out
+.cuda-env/*
