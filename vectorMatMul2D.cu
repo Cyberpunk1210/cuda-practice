@@ -66,7 +66,8 @@ void MatMul(const Matrix A, const Matrix B, Matrix C)
     MatMulKernel<<<dimGrid, dimBlock>>>(d_A, d_B, d_C);
     auto end = std::chrono::system_clock::now();
     std::chrono::duration<double> elapsed_seconds = end - start;
-    std::cout << "Elapsed Time: " << elapsed_seconds.count() << "sec" << std::endl;
+
+    std::cout << "Elapsed Time: " << elapsed_seconds.count() * 1000 << "ms" << std::endl;
 
     cudaMemcpy(C.elements, d_C.elements, size, cudaMemcpyDeviceToHost);
     cudaFree(d_A.elements);

@@ -2,6 +2,8 @@
 **/test
 **/ceval_output
 .cuda-env/*
+*.out
+CMakeLists.txt
 
 ##### Python.gitignore #####
 # Byte-compiled / optimized / DLL files
